@@ -28,11 +28,12 @@ npm install -g gatsby-cli
 gatsby develop
 ```
 
-## Run tests
+## Env vars
 
-```sh
-yarn run test
-```
+| NAME                    |                                       |
+| ----------------------- | ------------------------------------- |
+| CONTENTFUL_SPACE_ID     | ID of your contentful space           |
+| CONTENTFUL_ACCESS_TOKEN | your personal contentful access token |
 
 ## Author
 
