@@ -38,7 +38,7 @@ yarn run test
 
 👤 **Tristan Ramirez <tristan.rami@gmail.com>**
 
-- Website: tristan-ramirez.me
+- Website: https://tristan-ramirez.me/
 - Twitter: [@ttrmz](https://twitter.com/ttrmz)
 - Github: [@ttrmz](https://github.com/ttrmz)
 
