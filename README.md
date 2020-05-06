@@ -34,6 +34,7 @@ gatsby develop
 | ----------------------- | ------------------------------------- |
 | CONTENTFUL_SPACE_ID     | ID of your contentful space           |
 | CONTENTFUL_ACCESS_TOKEN | your personal contentful access token |
+| SNIPCART_API_KEY        | your snipcart API key                 |
 
 ## Author
 

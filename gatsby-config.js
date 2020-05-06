@@ -18,6 +18,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: "gatsby-plugin-snipcartv3",
+      options: {
+        apiKey: process.env.SNIPCART_API_KEY,
+        autopop: true,
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
