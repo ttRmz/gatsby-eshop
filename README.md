@@ -3,7 +3,7 @@
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/ttrmz/gatsby-eshop#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ttrmz/gatsby-eshop/graphs/commit-activity)
-[![License: MIT](https://img.shields.io/github/license/ttrmz/gatsby-eshop)](https://github.com/ttrmz/gatsby-eshop/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/ttrmz/gatsby-Eshop)](https://github.com/ttrmz/gatsby-eshop/blob/master/LICENSE)
 [![Twitter: ttrmz](https://img.shields.io/twitter/follow/ttrmz.svg?style=social)](https://twitter.com/ttrmz)
 
 > A simple eshop starter to get up with Gatsby
