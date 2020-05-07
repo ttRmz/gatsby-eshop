@@ -1,21 +1,51 @@
-import React from "react"
 import { Link } from "gatsby"
+import React from "react"
+import { Button, Container, Header, Icon } from "semantic-ui-react"
+import Layout from "../components/Layout"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+export default function Home({ data }) {
+  return (
+    <Layout title="Home">
+      <Container textAlign="center">
+        <Header
+          className="home__title"
+          as="h1"
+          content={`${data.site.siteMetadata.title}`}
+          style={{
+            fontSize: "4em",
+            marginBottom: 0,
+            marginTop: "3em",
+          }}
+        />
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+        <Header
+          className="home__subtitle"
+          as="h2"
+          content={data.site.siteMetadata.description}
+          style={{
+            fontSize: "1.7em",
+            fontWeight: "normal",
+            marginTop: "1.5em",
+            marginBottom: "2em",
+          }}
+        />
 
-export default IndexPage
+        <Button as={Link} to="/products" color="teal" size="huge">
+          Explore
+          <Icon name="right arrow" />
+        </Button>
+      </Container>
+    </Layout>
+  )
+}
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+  }
+`

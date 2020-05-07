@@ -1,3 +1,1 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- */
+import "semantic-ui-css/semantic.min.css"
