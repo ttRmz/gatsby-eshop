@@ -1,14 +1,6 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
-import {
-  Button,
-  Container,
-  Header,
-  Icon,
-  Item,
-  Label,
-  Input,
-} from "semantic-ui-react"
+import { Container, Header, Icon, Input, Item, Label } from "semantic-ui-react"
 import Layout from "../components/Layout"
 
 export default function Product({ data }) {
