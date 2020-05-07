@@ -3,16 +3,18 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `Gatsby E-shop`,
-    description: `A simple eshop starter to get up with Gatsby`,
+    description: `A simple eshop starter to get up with Gatsby, Contenful and Snipcart`,
     author: `@ttrmz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-snipcartv3",
+      resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
-        apiKey: process.env.SNIPCART_API_KEY,
-        autopop: true,
+        version: "3.0.12",
+        defaultLang: "en",
+        currency: "eur",
+        openCartOnAdd: true,
       },
     },
     {

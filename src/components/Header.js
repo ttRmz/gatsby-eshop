@@ -23,9 +23,10 @@ export default function Header({ siteTitle }) {
         ))}
 
         <Menu.Menu position="right">
-          <HeaderLink path="/cart">
+          <Menu.Item as="a" className="snipcart-checkout" href="#">
             <Icon name="shopping cart" />
-          </HeaderLink>
+            <span class="snipcart-items-count"></span>
+          </Menu.Item>
         </Menu.Menu>
       </Container>
     </Menu>

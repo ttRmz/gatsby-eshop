@@ -4,7 +4,8 @@ import { Container, Header, Icon, Input, Item, Label } from "semantic-ui-react"
 import Layout from "../components/Layout"
 
 export default function Product({ data }) {
-  const { name, image, description, price } = data.contentfulProduct
+  const { name, image, description, price, slug } = data.contentfulProduct
+  const [quantity, setQuantity] = React.useState(1)
 
   return (
     <Layout title={name} keywords={[`gatsby`, `application`, `react`]}>
@@ -42,12 +43,23 @@ export default function Product({ data }) {
                   labelPosition: "right",
                   icon: "cart",
                   content: "Add to cart",
+                  className: "snipcart-add-item",
+                  "data-item-id": slug,
+                  "data-item-price": price,
+                  "data-item-image": image.fixed.src,
+                  "data-item-description": description.description,
+                  "data-item-name": name,
+                  "data-item-url": `/${slug}`,
+                  "data-item-quantity": quantity,
                 }}
                 size="small"
                 type="number"
-                actionPosition="right"
-                placeholder="Search..."
-                defaultValue={1}
+                placeholder="Quantity"
+                value={quantity}
+                min={1}
+                onChange={({ target }) => {
+                  !!target.value && setQuantity(target.value)
+                }}
               />
             </Item.Content>
           </Item>
