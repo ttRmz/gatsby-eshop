@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import { Button, Container, Header, Icon } from "semantic-ui-react"
 import Layout from "../components/Layout"

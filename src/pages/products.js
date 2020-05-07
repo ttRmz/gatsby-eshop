@@ -1,3 +1,4 @@
+import { graphql } from "gatsby"
 import React from "react"
 import { Card, Container, Header } from "semantic-ui-react"
 import Layout from "../components/Layout"
