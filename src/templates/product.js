@@ -49,7 +49,7 @@ export default function Product({ data }) {
                   "data-item-image": image.fixed.src,
                   "data-item-description": description.description,
                   "data-item-name": name,
-                  "data-item-url": `/${slug}`,
+                  "data-item-url": `${process.env.GATSBY_SITE_URL}/${slug}`,
                   "data-item-quantity": quantity,
                 }}
                 size="small"

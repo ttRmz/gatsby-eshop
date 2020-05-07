@@ -33,11 +33,12 @@ gatsby develop
 
 ## Env vars
 
-| NAME                    |                                       |
-| ----------------------- | ------------------------------------- |
-| CONTENTFUL_SPACE_ID     | ID of your contentful space           |
-| CONTENTFUL_ACCESS_TOKEN | your personal contentful access token |
-| GATSBY_SNIPCART_API_KEY | your snipcart API key                 |
+| NAME                    |                                             |
+| ----------------------- | ------------------------------------------- |
+| CONTENTFUL_SPACE_ID     | ID of your contentful space                 |
+| CONTENTFUL_ACCESS_TOKEN | your personal contentful access token       |
+| GATSBY_SNIPCART_API_KEY | your snipcart API key                       |
+| GATSBY_SITE_URL         | eshop url (used for snipcart data-item-url) |
 
 ## Author
 
