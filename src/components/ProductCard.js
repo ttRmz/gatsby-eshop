@@ -7,7 +7,7 @@ export default function ProductCard({ product, ...props }) {
   return (
     <Card as={Link} to={`/${product.slug}`} fluid {...props}>
       <Image
-        src={`https://${product.image.fixed.src}`}
+        src={product.image.fixed.src}
         wrapped
         ui={false}
         alt={product.image.title}

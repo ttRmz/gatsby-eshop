@@ -24,7 +24,7 @@ export default function Product({ data }) {
       <Container text>
         <Item.Group>
           <Item>
-            <Item.Image size="medium" src={`https:${image.fixed.src}`} />
+            <Item.Image size="medium" src={image.fixed.src} />
 
             <Item.Content>
               <Item.Description>{description.description}</Item.Description>
