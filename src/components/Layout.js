@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./SEO"
 
@@ -16,13 +17,17 @@ const Layout = ({ children, ...props }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
       <SEO {...props} />
 
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      {children}
-    </>
+      <main style={{ marginBottom: "8em" }}>{children}</main>
+
+      <Footer />
+    </div>
   )
 }
 
