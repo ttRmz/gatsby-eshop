@@ -1,5 +1,6 @@
 # Welcome to gatsby-eshop 👋
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/145652b6-6541-4d9b-8112-a5e5b26b5408/deploy-status)](https://app.netlify.com/sites/ttrmz-gatsby-eshop/deploys)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/ttrmz/gatsby-eshop#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ttrmz/gatsby-eshop/graphs/commit-activity)
@@ -7,6 +8,8 @@
 [![Twitter: ttrmz](https://img.shields.io/twitter/follow/ttrmz.svg?style=social)](https://twitter.com/ttrmz)
 
 > A simple eshop starter to get up with Gatsby
+
+### ✨ [Demo](https://ttrmz-gatsby-eshop.netlify.app)
 
 ## Install
 
