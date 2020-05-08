@@ -51,6 +51,7 @@ export default function Product({ data }) {
                   "data-item-name": name,
                   "data-item-url": `${process.env.GATSBY_SITE_URL}/${slug}`,
                   "data-item-quantity": quantity,
+                  "data-item-min-quantity": 1,
                 }}
                 size="small"
                 type="number"
@@ -58,7 +59,7 @@ export default function Product({ data }) {
                 value={quantity}
                 min={1}
                 onChange={({ target }) => {
-                  !!target.value && setQuantity(target.value)
+                  setQuantity(target.value)
                 }}
               />
             </Item.Content>
